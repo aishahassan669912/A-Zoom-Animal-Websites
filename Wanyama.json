@@ -1,0 +1,69 @@
+{
+  "Wanyama": [
+    {
+      "id": "4",
+      "Title": "my pet",
+      "Poster": "https://img.freepik.com/free-photo/view-wild-gibbon-ape-nature-with-flowers_23-2150743212.jpg?uid=R193347100&ga=GA1.1.825489506.1740317358&semt=ais_hybrid&w=740",
+      "Plot": "A graceful gibbon lounges peacefully in a jungle scene adorned with colorful flowers, reflecting harmony in nature.\"",
+      "Price": "55"
+    },
+    {
+      "id": "6",
+      "Title": "Graceful Flamingo",
+      "Poster": "https://img.freepik.com/free-photo/closeup-shot-beautiful-flamingo_181624-25830.jpg?uid=R193347100&ga=GA1.1.825489506.1740317358&semt=ais_hybrid&w=740",
+      "Plot": "With elegance in every step, this flamingo thrives in the shimmering waters, flaunting its vivid pink feathers.",
+      "Price": "800"
+    },
+    {
+      "id": "7",
+      "Title": "Emerald Lovebird",
+      "Poster": "https://img.freepik.com/free-photo/closeup-shot-green-lovebird-with-blurred-background_181624-41886.jpg?uid=R193347100&ga=GA1.1.825489506.1740317358&semt=ais_hybrid&w=740",
+      "Plot": "A vibrant green lovebird known for its loyalty and charm, often seen fluttering joyfully among the trees.",
+      "Price": "700"
+    },
+    {
+      "id": "8",
+      "Title": "Neon Giraffes",
+      "Poster": "https://img.freepik.com/free-photo/giraffes-neon-lights_23-2151726134.jpg?uid=R193347100&ga=GA1.1.825489506.1740317358&semt=ais_hybrid&w=740",
+      "Plot": "A stunning scene of giraffes illuminated by vibrant neon lights, blending the beauty of nature with a modern twist.",
+      "Price": "900"
+    },
+    {
+      "id": "8",
+      "Title": "Nature's Duck",
+      "Poster": "https://img.freepik.com/free-photo/duck-living-life-nature_23-2150701993.jpg?uid=R193347100&ga=GA1.1.825489506.1740317358&semt=ais_hybrid&w=740",
+      "Plot": "A peaceful duck enjoying its natural surroundings, capturing the essence of tranquility and wildlife.",
+      "Price": "965"
+    }
+  ],
+  "Users": [
+    {
+      "name": "aisha mohamed",
+      "email": "aishahassan669912@gmail.com",
+      "subject": "lion",
+      "message": "lion is kingest of all animals and brafe and has power that even fear the both people and other animals",
+      "id": "626a"
+    },
+    {
+      "id": "633a",
+      "name": "cuudey",
+      "email": "aishacuud44@gmail.com",
+      "subject": "zebra",
+      "message": "zabra is a wildlife animal that was having a reflection in a jungle scene adorned with colorful flowers, reflecting harmony in nature"
+    },
+    {
+      "id": "df87",
+      "name": "asha dini",
+      "email": "ashadini457@gmail.com",
+      "subject": "giraff",
+      "message": "A stunning scene of giraffes illuminated by vibrant neon lights, blending the beauty of nature with a modern twist."
+    },
+    {
+      "id": "220c",
+      "name": "nuur",
+      "email": "nuurmocalin@gmail.com",
+      "subject": "cat",
+      "message": "Cats are small, furry mammals known for their playful and independent nature. They are popular pets around the world due to their affectionate behavior, graceful movements, and ability to form strong bonds with their owners"
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+
+.header {
+    background-color: white;
+    width: 100%;
+    padding: 16px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(238, 219, 219, 0.1);
+}
+        
+.header .logo a {
+    color: rgb(17, 15, 15);
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+        
+.navbar {
+    display: flex;
+    gap: 20px;
+}
+        
+.navbar a {
+    color: rgb(48, 34, 34);
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+        
+.navbar a:hover {
+    color: #8B4513;
+}
+
+/* Pricing Section */
+.pricing {
+    text-align: center;
+    padding: 50px 0;
+    background: #f8f9fa;
+}
+
+.deco-title {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.pricing-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.price-box {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.price-box:hover {
+    transform: scale(1.06);
+}
+
+.price-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #f8b400;
+}
+
+.price-box p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.price-box h4 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.price-box button {
+    background: #f8b400;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.price-box button:hover {
+    background: #d89c00;
+}
+
+
+
+/* Footer Styles */
+.footer {
+    background: #222;
+    color: white;
+    padding: 50px 5% 30px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-column h4 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: #DAA520;
+}
+
+.footer-column p, .footer-column ul {
+    font-size: 0.95rem;
+    color: #ddd;
+    line-height: 1.6;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #DAA520;
+}
+
+.social-icons a {
+    display: block;
+    color: white;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.social-icons a i {
+    margin-right: 8px;
+}
+
+.footer-bottom {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    font-size: 0.9rem;
+    color: #ebc6c6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+.header {
+        flex-direction: column;
+        padding: 15px;
+}
+    
+.logo {
+        margin-bottom: 15px;
+}
+    
+.navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+}
+    
+.home {
+        padding-top: 120px;
+        height: auto;
+        min-height: 100vh;
+}
+    
+.deco-title {
+        font-size: 2.2rem;
+}
+    
+.content h3 {
+        font-size: 1.5rem;
+}
+    
+.footer-row {
+        flex-direction: column;
+}
+    
+.footer-column {
+        text-align: center;
+    }
+}

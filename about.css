@@ -1,0 +1,241 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Fullscreen Slideshow */
+.about-image-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Slideshow Images */
+.about-image-container::before,
+.about-image-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    animation: slideImages 4s infinite;
+    opacity: 0;
+}
+
+/* First Image */
+.about-image-container::before {
+    background-image: url('https://img.freepik.com/free-photo/crossroad-car-safari-scene_23-2151822304.jpg');
+    animation-delay: 0s;
+}
+
+/* Second Image */
+.about-image-container::after {
+    background-image: url('https://img.freepik.com/free-photo/flamingos-standing-water_1398-3767.jpg');
+    animation-delay: 6s;
+}
+
+/* Keyframes for Fading Slideshow */
+@keyframes slideImages {
+    0% { opacity: 0; }
+    10% { opacity: 1; } /* Fade in */
+    50% { opacity: 1; } /* Stay fully visible */
+    90% { opacity: 0; } /* Fade out */
+    100% { opacity: 0; }
+}
+
+/* Navbar Overlay */
+.header {
+    background-color: white;
+    width: 100%;
+    padding: 16px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(238, 219, 219, 0.1);
+}
+
+.header .logo a {
+    color: rgb(17, 15, 15);
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    color: rgb(48, 34, 34);
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #8B4513;
+}
+
+/* Centered "About Us" Overlay Text */
+.about-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2.9rem;
+    font-weight: bold;
+    padding: 20px 40px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    z-index: 5;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-title {
+        font-size: 2rem;
+        padding: 10px 20px;
+    }
+
+    .navbar a {
+        font-size: 1rem;
+    }
+}
+
+/* About Page Styles */
+.about-main {
+    padding-top: 80px;
+    background-color: #f9f9f9;
+}
+
+.about-hero {
+    height: 400px;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                url('https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.deco-title {
+    color: white;
+    font-size: 3.5rem;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.about-content {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+    padding: 0 20px 60px;
+}
+
+.about-column {
+    flex: 1;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.about-column h2 {
+    color: #8B4513;
+    font-size: 2rem;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.about-column h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: #f8b400;
+}
+
+.about-column p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.about-column p strong {
+    color: #2c3e50;
+}
+
+.left-column {
+    border-top: 5px solid #8B4513;
+}
+
+.right-column {
+    border-top: 5px solid #f8b400;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .about-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .about-title {
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-hero {
+        height: 300px;
+    }
+    
+    .about-title {
+        font-size: 2.2rem;
+    }
+    
+    .about-column {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .about-hero {
+        height: 250px;
+    }
+    
+    .about-title {
+        font-size: 1.8rem;
+    }
+    
+    .about-column h2 {
+        font-size: 1.6rem;
+    }
+    
+    .about-column p {
+        font-size: 1rem;
+    }
+}
